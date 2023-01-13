@@ -29,7 +29,7 @@ router.post("/alumnos", async(req,res)=>{
         return id;//retornamos el id
     }
 
-    const idGenerado = generadorID() //declaramos la funcion en una constante id
+    const idGenerado = generadorID() //declaramos la funcion en una constante (idGenerado)
 
     const nuevoAlumno = {...req.body,id:idGenerado }
     //Creamos un objeto nuevoAlumno que tenga todo lo que ponemos en el body y le agregamos la propiedad id con el valor idGenerado
