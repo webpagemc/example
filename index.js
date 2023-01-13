@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.use("/api",require("./routers/alumnosRuta"));//Utilizamos las rutas de alumnos
+app.use("/",require("./routers/alumnosRuta"));//Utilizamos las rutas de alumnos
 
 const PORT = 8080;
 
